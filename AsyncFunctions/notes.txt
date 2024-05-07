@@ -1,0 +1,47 @@
+Promises in JavaScript serve the purpose of handling asynchronous operations.
+ Before promises, handling asynchronous tasks like fetching data from a server
+  or reading a file was done using callbacks, which could lead to callback hell 
+  and make code difficult to read and maintain.Promises provide a cleaner 
+  and more structured way to work with asynchronous code.
+   They represent the eventual completion or failure of an asynchronous operation 
+   and allow you to chain multiple asynchronous operations together in a more readable 
+   and manageable way. 
+
+If promises were not available in JavaScript, 
+developers would likely have to resort to callback-based patterns exclusively, 
+which can become complex and difficult to manage, especially in large and deeply
+nested codebases. This could lead to less maintainable and harder-to-understand 
+code, ultimately impacting the productivity and efficiency of developers.
+#####################################
+
+Indeed, `async` and `await` are enhancements built on top of promises, 
+introduced in ECMAScript 2017 (ES8). They provide a more synchronous-looking syntax 
+for writing asynchronous code, making it easier to understand and reason about 
+asynchronous operations.
+
+With `async` functions, you can write asynchronous code in a way that looks and
+ behaves like synchronous code. You use the `await` keyword within an `async` function 
+ to pause execution until a promise is resolved or rejected, making the code appear sequential.
+The benefits of `async` and `await` over raw promises include:
+1. **Readability**: `async` and `await` make asynchronous code look more like synchronous code, 
+which can be easier to understand, especially for developers 
+who are new to JavaScript or asynchronous programming.
+
+2. **Error Handling**: `async` and `await` simplify error handling by allowing you to use
+ `try/catch` blocks around asynchronous code, similar to synchronous code,
+  which leads to cleaner and more concise error handling logic.
+
+3. **Chaining**: You can easily chain asynchronous operations using `await`, 
+making the code more readable compared to chaining promises manually using `.then()`.
+
+4. **Debugging**: As `async` and `await` make asynchronous code appear synchronous, 
+debugging becomes easier since you can step through the code sequentially.
+
+While `async` and `await` provide significant improvements over raw promises,
+it's essential to understand that they are built on top of promises and not a replacement.
+Under the hood, `async` functions still return promises, and `await` only works with promises.
+ Promises are still a fundamental part of JavaScript asynchronous programming, but `async` and `await` 
+ provide a more elegant and readable way to work with them.
+
+ so when one promise has to finish and the other has to wait until the other promises is finished 
+ when this happened it is better to use asyc await 
