@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header,footer{
+    background-color: #085070;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+header p , footer p{
+    padding: 20px;
+}
+.banner-puppies img{
+    width: 100%;
+}
+
+
+.more{
+    text-align: center;
+    font-size: 30px;
+}
+   
+.missing{
+        width: 310px;
+        height: 310px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: #f04d65;
+        font-size: 50px;
+        
+        
+ }
+ .container{
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+        margin: 30px auto;
+
+    }
+    
+    
