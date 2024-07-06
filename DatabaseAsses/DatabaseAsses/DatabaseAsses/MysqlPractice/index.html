@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products</title>
+  </head>
+  <body>
+    <h1>Add Products</h1>
+    <form action="http://localhost:3001/add-products" method="post">
+      <label for="name">Product_ID:</label><br />
+      <input type="text" name="product_id" />
+      <br /><br />
+      <label for="imgPath">product image path:</label><br />
+      <input type="text" name="proPath" />
+      <br /><br />
+      <label for="iphoneLink">product page link:</label><br />
+      <input type="text" name="productlink" />
+      <br /><br />
+      <label for="iphoneTitle">productone Title:</label><br />
+      <input type="text" name="productname" />
+      <br /><br />
+      <label for="StartPrice">Starting price:</label><br />
+      <input type="text" name="StartPrice" />
+      <br /><br />
+      <label for="priceRange">Price range:</label><br />
+      <input type="text" name="priceRange" />
+      <br /><br />
+
+      <label for="briefDescription">Brief Description:</label><br />
+      <textarea name="briefDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="fullDescription">Full Description:</label><br />
+      <textarea name="fullDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <input type="submit" value="App Product" />
+    </form>
+  </body>
+</html>
