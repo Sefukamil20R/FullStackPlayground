@@ -1,0 +1,33 @@
+ https://youtube.googleapis.com/youtube/v3/channels?part=id&forUsername=Apple&key=AIzaSyCTDfryXGP88ucF7v3yhDp2WFSXStFixNg
+ AIzaSyCTDfryXGP88ucF7v3yhDp2WFSXStFixNg   == ma key
+
+
+ {
+  "kind": "youtube#channelListResponse",
+  "etag": "mz69kTl4eTWQ_DNpITJReTTsCDY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "YBIB3kIgzFGk1Uu42kfTJsfeA4w",
+      "id": "UCE_M8A5yxnLfW0KghEeajjw"
+    }
+  ]
+}
+
+
+
+Apple key == UCE_M8A5yxnLfW0KghEeajjw
+
+for evangadi like 
+ https://youtube.googleapis.com/youtube/v3/channels?part=id&forUsername=EvangadiTech&key=AIzaSyCTDfryXGP88ucF7v3yhDp2WFSXStFixNg
+
+simply by searchin the usename in youtube then reaplace it here in username
+
+
+8 vedio generate link
+ https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=date&key=AIzaSyCTDfryXGP88ucF7v3yhDp2WFSXStFixNg 
+
