@@ -1,0 +1,55 @@
+https://developers.google.com/youtube/v3/getting-started
+
+
+
+https://www.googleapis.com/youtube/v3/search?key={yourapi}
+&channelId={channel_id_here}&part=snippet,id&order=date&maxResults=10
+
+// https://commentpicker.com/youtube-channel-id.php
+
+
+
+###########################################################
+Do you know how to fetch or bring the JSON data to your react app?
+1. Create a component in your react app
+Create a functional component
+Implement the JSX and CSS according to the design
+2. Import useState hook from react
+3. Initialize the useState with an empty array
+Example: const [youTubeVideos, setYouTubeVideos] = useState([]);
+4. Import useEffect hook from react
+In order to use the lifecycle method, when the component mounts or runs only once.
+5. Use fetch() method to make a request and bring the JSON data
+Inside fetch() method include the URL string constructed earlier
+Only fetch data once, when component mounts, by using useEffect hook
+6. Change the JSON file into JSON Object
+fetch() method returns a promise, therefore you can use .then() method after it
+Inside then() method, you can change the response (JSON file) to a JSON Object using .JSON() method
+7. Store the JSON Object data inside the empty array, initialized using useState hook earlier (youTubeVideos)
+To do this, it still needs to be inside another then() method
+Inside then() method, use setYouTubeVideos() function, coming from the useState hook initialized earlier, to update the state.
+8. Test if your state has the JSON Object
+console.log(youTubeVideos)
+Example:
+const [youTubeVideos, setYouTubeVideos] = useState([]);
+
+useEffect(() => { fetch("https://www.googleapis.com/youtube/v3/search?key=AIzaSyB4xNW_TeLDTO9tKxmHQAZskoy9Na0sxR0&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6") .then((response) => response.json()) .then((data) => { const youTubeVideosData = data.items setYouTubeVideos(youTubeVideosData); }); }, []);
+
+console.log(youTubeVideos);
+
+
+
+########################################
+
+Youtube Channel Id
+api key: AIzaSyCr-a4Y9AJWYNlQJTtiMRF_QA5tMnxztaE
+
+channel_id=UCE_M8A5yxnLfW0KghEeajjw
+
+
+
+
+https://www.googleapis.com/youtube/v3/search?key={YOUR_API_KEY}
+&channelId={channel_id_here}&part=snippet,id&order=date&maxResults=10
+
+// when we fiil the follwing it produces the json data 
