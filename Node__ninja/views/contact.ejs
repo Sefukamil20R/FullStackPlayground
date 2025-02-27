@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/style.css">
+
+    </head>
+    <body>
+        <%- include('partials/nav.ejs') %>
+
+        <h1>Contact</h1>
+        <p>Call me now</p>
+        <p><%= qs.department %></p>
+        <form action="/contact" method="POST">
+            <input type="text" name="department" placeholder="department" value = <%= qs.department %> >
+            <input type="text" name="name" placeholder="name" value= <%= qs.name %> >
+            <button type="submit">Submit</button>
+    </body>
+</html>
